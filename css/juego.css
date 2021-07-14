@@ -1,0 +1,74 @@
+:root {
+    --tiempo: 1s; 
+    --imgCuadro1: url('../img/img4.png');
+    --imgCuadro2: url('../img/img2.png');
+    --imgCuadro3: url('../img/img1.png');
+  }
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.juego{
+    background-color: #ec6806;
+    width: 90%;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px black;
+}
+
+.tablero{   
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color:transparent; 
+}
+.cuadro{
+    background-color:burlywood;
+    width: 300px;
+    height: 300px;  
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    display: inline-block;
+    margin-top: 300px;
+} 
+
+#cuadro1{
+    background-color:red;  
+    margin-right: 50px;
+    margin-left: 0px;
+    content: var(--imgCuadro1);
+    /* animation: cambio 1.5s ease-in infinite; */
+}
+
+#cuadro2{
+    background-color:green; 
+    margin-right: 50px;
+    margin-left: 50px;
+    content: var(--imgCuadro2);
+    /* animation: cambio 0.5s ease-out infinite; */
+}
+
+#cuadro3{
+    background-color:yellow; 
+    margin-right: 50px;
+    margin-left: 50px;
+    content: var(--imgCuadro3);
+    /* animation: cambio 1s linear infinite; */
+}
+
+#ejec{
+    margin-top: 50px;
+    width: 600px;
+    height: 100px;
+    font-size: 24px; 
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
